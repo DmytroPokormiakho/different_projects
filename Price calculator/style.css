@@ -1,0 +1,87 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.options-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.options-form__fieldset {
+    width: max-content;
+
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.options-form__legend {
+    padding-inline-start: 3px;
+    padding-inline-end: 3px;
+
+    text-align: center;
+}
+
+[class$="-radios__container"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 5px 0;
+
+    border: 2px solid grey;
+    border-radius: 10px;
+
+    background-color: rgb(228, 240, 244);
+}
+
+.label__container {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.label__container:nth-child(2n) {
+    border-left: 2px solid grey;
+}
+
+.label__container label {
+    width: 100%;
+    padding: 10px;
+
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+.label__container:nth-child(even) label {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.label__container:nth-child(odd) label {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.label__container input:checked+label {
+    background-color: greenyellow;
+}
+
+[class$="-radios__container"] input {
+    display: none;
+}
+
+.price-field {
+    min-width: 125px;
+    display: block;
+    margin: 0;
+
+    text-align: center;
+}

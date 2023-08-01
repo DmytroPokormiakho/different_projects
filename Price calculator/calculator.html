@@ -5,10 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caluclator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="options-container">
+        <fieldset class="options-form__fieldset">
+            <legend class="options-form__legend"> Оберіть бажані параметри </legend>
+            <form name="options" class="options-form">
+                <div class="quotes-radios__container">
+                    <div class="label__container">
+                        <input type="radio" name="quotes" value="false" id="quotes_false" class="quotes-radio">
+                        <label for="quotes_false" class="quotes-radio__label">
+                            Без цитат
+                        </label>
+                    </div>
+                    <div class="label__container">
+                        <input type="radio" name="quotes" value="true" id="quotes_true" class="quotes-radio" checked>
+                        <label for="quotes_true" class="quotes-radio__label">
+                            З цитатами
+                        </label>
+                    </div>
+                </div>
+                <div class="teachers-radios__container">
+                    <div class="label__container">
+                        <input type="radio" name="teachers" value="false" id="teachers_false" class="teachers-radio">
+                        <label for="teachers_false" class="teachers-radio__label">
+                            Без вчителів
+                        </label>
+                    </div>
+                    <div class="label__container">
+                        <input type="radio" name="teachers" value="true" id="teachers_true" class="teachers-radio"
+                            checked>
+                        <label for="teachers_true" class="teachers-radio__label">
+                            З вчителями
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+        <p class="price-field">
+            Вартість:
+            <b><span class="price-field__span">0</span> ₴</b>
+        </p>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
